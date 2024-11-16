@@ -240,7 +240,7 @@ main {
 
 /* Limit the width of the Twitter embed */
 .twitter-tweet {
-  max-width: 45%; /* Set the max width of the tweet box */
+  max-width: 35%; /* Set the max width of the tweet box */
   margin: 0 auto; /* Center the tweet */
 }
 
@@ -327,4 +327,17 @@ footer {
   .intro-text p {
     font-size: 16px;
   }
+}
+
+.story 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  max-width: 300px;
 }
