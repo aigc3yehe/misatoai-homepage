@@ -1,0 +1,330 @@
+/* General reset for margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  justify-content: space-between; /* Ensures items are spaced out */
+  align-items: center; /* Vertically centers the items */
+  padding: 20px 50px;
+  background-color: #ffffff;
+}
+
+/* Left side Logo */
+.logo-container img {
+  width: 150px;
+}
+
+/* Centered navigation menu */
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px; /* Adds space between the items */
+}
+
+.nav-menu ul li {
+  display: inline;
+}
+
+.nav-menu ul li a {
+  color: #7656E9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Right side icon links */
+.icon-container {
+  display: flex;
+  gap: 15px; /* Adds space between icons */
+}
+
+.icon-container .icon img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Styling for the main content */
+main {
+  padding: 50px 10px;
+}
+
+/* Container for the buttons */
+.button-container {
+  display: flex; /* Align buttons horizontally */
+  justify-content: center; /* Center the buttons */
+  gap: 20px; /* Adds space between the buttons */
+  margin-top: 20px; /* Adds space between the title and buttons */
+}
+
+/* Button styling */
+.button-container .buy-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Specific styles for Base button */
+.buy-button.base {
+  background-color: #3b82f6; /* Blue background */
+}
+
+/* Hover effect for Base button */
+.buy-button.base:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}
+
+/* Specific styles for Sol button */
+.buy-button.sol {
+  background: linear-gradient(45deg, #9b6efc, #00d4a2); /* Gradient from purple to green */
+}
+
+/* Hover effect for Sol button */
+.buy-button.sol:hover {
+  background: linear-gradient(45deg, #7a56e8, #00b06f); /* Slightly darker gradient on hover */
+}
+
+
+
+/* Intro Section */
+.intro {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  padding: 50px 10px;
+  height: 50vh; /* Make intro section take the full height of the viewport */
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Vertically center content */
+  align-items: center; /* Horizontally center content */
+  max-width: 1200px; /* Maximum width of the content */
+  width: 100%;
+  text-align: center; /* Center the text */
+}
+
+.intro-image img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover; /* Ensures the image fits well */
+  margin-bottom: 20px; /* Adds space between the image and text */
+}
+
+.intro-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Overall Section */
+
+.overall-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align content to the left */
+  align-items: flex-start; /* Align items to the top */
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px; /* Adds space between text and image */
+}
+
+/*.overall-text {
+  flex: 1; /* Takes up remaining space */
+  text-align: left; /* Ensure text is aligned to the left */
+}*/
+
+.overall-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.overall-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 4px;
+}
+
+.overall-image img {
+  width: 100%;
+  max-width: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive design for screens smaller than 1200px */
+@media (max-width: 800px) {
+  .overall-content {
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center the content */
+  }
+
+  .overall-image img {
+    width: 80%; /* Adjust image size for smaller screens */
+  }
+
+  .overall-text {
+    text-align: left; /* Ensure text remains left-aligned */
+  }
+}
+
+
+
+
+
+
+
+/* MISATO Studio Section */
+.overall, .studio, .misato-frens, .governance {
+  padding: 30px 20px;
+  background-color: white;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.studio-image {
+  display: flex; /* Use flexbox for layout */
+  gap: 20px; /* Space between tweets */
+  justify-content: center; /* Center the tweets horizontally */
+}
+
+.studio h2, .misato-frens h2, .governance h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.studio p, .misato-frens p, .governance p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.studio a, .misato-frens a, .governance a {
+  font-size: 16px;
+  color: #8a58f2;
+  text-decoration: none;
+}
+
+.studio a:hover, .misato-frens a:hover, .governance a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Limit the width of the Twitter embed */
+.twitter-tweet {
+  max-width: 45%; /* Set the max width of the tweet box */
+  margin: 0 auto; /* Center the tweet */
+}
+
+/* Optional: Customize the border radius */
+.twitter-tweet blockquote {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Optional: Adjust padding for a smaller appearance */
+.twitter-tweet a {
+  padding: 5px;
+}
+
+
+
+
+
+/* MISATO Frens NFT Gallery */
+.nft-gallery {
+  flex-direction:row;
+  flex-wrap:wrap;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.nft-gallery img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.buy-button {
+  background-color: #8a58f2;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.buy-button:hover {
+  background-color: #6a3bbf;
+}
+
+/* Responsive design for Intro Section */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center the content */
+    text-align: center;
+  }
+
+  .intro-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .intro-text h1 {
+    font-size: 28px;
+  }
+
+  .intro-text p {
+    font-size: 16px;
+  }
+}
