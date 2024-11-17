@@ -211,7 +211,7 @@ main {
 
 
 /* MISATO Studio Section */
-.overall, .studio, .misato-frens, .governance {
+.token, .overall, .studio, .misato-frens, .governance {
   padding: 30px 20px;
   background-color: white;
   margin: 20px 0;
@@ -306,6 +306,15 @@ footer {
 /* Button styling */
 .buy-button {
   background-color: #8a58f2;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.buy-button2black {
+  background-color: #666666;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
