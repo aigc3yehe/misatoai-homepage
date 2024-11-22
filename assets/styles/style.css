@@ -92,11 +92,13 @@ main {
 /* Specific styles for Base button */
 .buy-button.base {
   background-color: #3b82f6; /* Blue background */
+  word-wrap: break-word;
 }
 
 /* Hover effect for Base button */
 .buy-button.base:hover {
   background-color: #2563eb; /* Darker blue on hover */
+  word-wrap: break-word;
 }
 
 /* Specific styles for Sol button */
