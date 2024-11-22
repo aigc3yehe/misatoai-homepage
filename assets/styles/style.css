@@ -104,11 +104,13 @@ main {
 /* Specific styles for Sol button */
 .buy-button.sol {
   background: linear-gradient(45deg, #9b6efc, #00d4a2); /* Gradient from purple to green */
+  word-wrap: break-word;
 }
 
 /* Hover effect for Sol button */
 .buy-button.sol:hover {
   background: linear-gradient(45deg, #7a56e8, #00b06f); /* Slightly darker gradient on hover */
+  word-wrap: break-word;
 }
 
 
@@ -313,6 +315,7 @@ footer {
   text-decoration: none;
   border-radius: 5px;
   margin: 5px;
+  word-wrap: break-word;
 }
 
 .buy-button2black {
@@ -322,10 +325,12 @@ footer {
   text-decoration: none;
   border-radius: 5px;
   margin: 5px;
+  word-wrap: break-word;
 }
 
 .buy-button:hover {
   background-color: #6a3bbf;
+  word-wrap: break-word;
 }
 
 /* Responsive design for Intro Section */
